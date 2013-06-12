@@ -1,0 +1,3 @@
+\pset null 'NULL'
+
+\set AUTOCOMMIT off

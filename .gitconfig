@@ -1,0 +1,36 @@
+[rerere]
+    enabled = 1 
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    log = auto
+    blame = auto
+[alias]
+    st = status -sb
+    ci = commit -v
+    addi = add --interactive
+    br = checkout -b
+    co = checkout
+    pick = cherry-pick -s
+    praise = blame -w
+    up = !git stash && git pull --rebase && git submodule update && git stash pop
+    lg = log --graph --all --pretty=format:'%Cred%h%Creset - %Cgreen(%cN, %cr)%Creset %s%C(yellow)%d%Creset' --abbrev-commit --date=relative
+    who = shortlog -sn --
+    save = stash save
+    pop = stash pop 
+    clear = stash clear
+    debt = grep -I 'FIXME\\|TODO\\|XXX'
+    svnpush = svn dcommit
+    svnpull = svn rebase
+[user]
+    email = wallace@reis.me
+    name = Wallace Reis
+[push]
+    default = current
+[pull]
+    rebase = true
+[diff]
+    algorithm = patience
+[status]
+    submodule = 1
