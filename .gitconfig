@@ -6,6 +6,16 @@
     branch = auto
     log = auto
     blame = auto
+[color "status"]
+    branch = green
+[color "diff"]
+    plain = normal
+    meta = green
+    frag = yellow
+    old = magenta
+    new = cyan
+    commit = yellow bold
+    whitespace = reverse black
 [alias]
     st = status -sb
     ci = commit -v
