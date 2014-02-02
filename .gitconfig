@@ -33,6 +33,12 @@
     debt = grep -I 'FIXME\\|TODO\\|XXX'
     svnpush = svn dcommit
     svnpull = svn rebase
+    changes = diff --name-status -r
+    deleted = log -1 --
+    diffstat = diff --stat -r
+    dm = diff -w -M master...HEAD
+    prom = pull --rebase origin master
+    pt = push --tags
 [user]
     email = wallace@reis.me
     name = Wallace Reis
